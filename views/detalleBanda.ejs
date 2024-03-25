@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <% for (let i = 0; i < index.length; i++) { %>
+            <li>nombre: <%= index[i].nombre %></li>
+            <li> Integrantes: <%= index[i].integrantes %></li>
+                <li>genero: <%= index[i].genero %></li>
+                <li> Canciones más conocidas: <%= index[i].topCanciones%> </li>
+                <li><img src="<%= index[i].cover %>" alt=""></li>
+        <% } %>
+    </ul>
+</body>
+</html>
