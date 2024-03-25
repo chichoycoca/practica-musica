@@ -7,11 +7,12 @@
 </head>
 <body>
     <main>
+        <h1>LISTADO BANDAS</h1>
         <ul>
 
             <% for (let i = 0; i < index.length; i++) { %>
     
-                <li> Banda: <%= index[i].nombre %> </li>
+                <li> Banda: <a href="bandas/id/<%= index[i].id %>"> <%= index[i].nombre %> </a></li>
                 
     
             <% } %>

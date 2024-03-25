@@ -9,8 +9,8 @@
     <h2>CANCIONES CON EL GÉNERO :</h2>
     <ul>
         <% for (let i = 0; i < index.length; i++) { %>
-            <li>nombre: <%= index[i].nombre %></li>
-            <li>genero: <%= index[i].genero %></li>
+            <li>nombre: <a href="../id/<%= index[i].id %>"><%= index[i].nombre %></a></li>
+           
             <% } %>
     </ul>
     

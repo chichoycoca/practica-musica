@@ -10,7 +10,7 @@
         <% for (let i = 0; i < index.length; i++) { %>
             <li>nombre: <%= index[i].nombre %></li>
             <li> Integrantes: <%= index[i].integrantes %></li>
-                <li>genero: <%= index[i].genero %></li>
+                <li><a href="/bandas/genero/<%= index[i].genero %>">genero: <%= index[i].genero %></a></li>
                 <li> Canciones más conocidas: <%= index[i].topCanciones%> </li>
                 <li><img src="<%= index[i].cover %>" alt=""></li>
         <% } %>
